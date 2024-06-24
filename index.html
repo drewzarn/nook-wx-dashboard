@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="wx.css">
 </head>
 <body>
-    <div id="main"></div>
+    <div id="main">
+        <span data-sensor="sensor.tempest_temperature">Temperature: {{value}}</span>
+        <span data-sensor="sensor.tempest_humidity">Humidity: {{value}}</span>
+    </div>
 </body>
 </html>
