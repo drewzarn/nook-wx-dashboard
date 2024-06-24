@@ -25,6 +25,7 @@ $(document).ready(function() {
 });
 
 fetchStates = function() {
+    $('#main').text('Loading...');
     for (let sensor of SENSORS) {
         fetch(`${window.CONFIG.HA_URL}states/${sensor.sensor}`, {
             headers: { 'Authorization': `Bearer ${window.CONFIG.HA_TOKEN}` }
